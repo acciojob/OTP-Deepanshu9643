@@ -2,7 +2,7 @@
 const codes = document.querySelectorAll(`.code`)
   codes.forEach((code,index) => {
 	  code.addEventListener(`input`, ()=>{
-		  if(code.value.length===1 && index <= codes.length){
+		  if(code.value.length===1 && index < codes.length - 1){
 			  codes[index+1].focus()
 		  }
 	  })
